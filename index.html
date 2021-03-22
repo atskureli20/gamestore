@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <script src="https://kit.fontawesome.com/5fe05390dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="" type="image/gif" sizes="16x16">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <nav class="nav-bar">
+            <div class="nav-content container"> 
+                <ul class="logo">
+                    <img class="nav-img" src="img/logo.png" alt="logo">
+                </ul>
+                <ul class="navigation">
+                    <li class="nav-list">
+                        <a class="nav-link geo" href="index.html">მთავარი</a>
+                    </li>
+                    <li class="nav-list">
+                        <a class="nav-link geo" href="#catalog">კატალოგი</a>
+                    </li>
+                    <li class="nav-list">
+                        <a class="nav-link geo" href="#weekly-news">სიახლე</a>
+                    </li>
+                    <li class="nav-list">
+                        <a class="nav-link geo" href="#contact">კონტაქტი</a>
+                    </li>
+                </ul>
+                <ul class="search shadow">
+                    <input class="inp-search" placeholder="ძიება..." type="search" name="search" id="">
+                </ul>
+                <ul class="profile shadow">
+                    <li> 
+                        <a href="profile.html">
+                            <div class="p-name-i">
+                                <i class="far fa-user-circle"></i>
+                                <h3 class="regular">Vazha</h3>
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                    <li>
+                        <div class="cart-wraper">
+                            <a href="#">
+                                <i class="fas fa-shopping-cart"></i>
+                                <div class="ordered-wraper">
+                                    <h1 class="ordered medium"> 2 </h1>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </ul>
+            </div>
+        </nav>
+            
+        <div class="carousel">
+            <div class="image-one"> 
+                <div class="slider-content">
+                    <h1 class="game-title medium">Last of us Part II</h1>
+                    <p class="game-desc geo">თამაში მესამე პირის სტილში</p>
+                    <div class="desc-btn shadow"><a class="geo" href="#">კალათაში დამატება</a></div>
+                </div>
+            </div>
+            <div class="image-two"> 
+                <div class="slider-content">
+                    <h1 class="game-title medium">Grand Theft Auto</h1>
+                    <p class="game-desc geo">თამაში მესამე პირის სტილში</p>
+                    <div class="desc-btn shadow"><a class="geo" href="#">კალათაში დამატება</a></div>
+                </div>
+            </div>
+            <div class="image-three"> 
+                <div class="slider-content">
+                    <h1 class="game-title medium">Resident Evil 7</h1>
+                    <p class="game-desc geo">თამაში პირველი პირის სტილში</p>
+                    <div class="desc-btn shadow"><a class="geo" href="#">კალათაში დამატება</a></div>
+                </div>
+            </div>
+        </div>
+    </header>
+ 
+
+
+    <section id="catalog" data-aos="fade-up">
+        <h1 class="section-title geo">კატალოგი</h1>
+        <div class="catalog-wrapper container">
+            <div class="catalog-btns">
+              <ul id="catalog-flters">
+                <li class="catalog-btn geo filter-active shadow" data-filter=".filter-discount, .filter-free"><a>ყველა</a></li>
+                <li class="catalog-btn geo shadow" data-filter=".filter-discount"><a>ფასდაკლება</a></li>
+                <li class="catalog-btn geo shadow" data-filter=".filter-free"><a>უფასო</a></li>
+              </ul>
+            </div>
+        </div>
+        
+          <div class="container" id="catalog-wrapper">
+              <!-- ფასდაკლება -->
+            <div class="catalog-item filter-discount shadow" data-aos="fade-up">
+                <div class="box-wrapper">
+                    <img src="img/Catalog/bg1.jpg" alt="catalog-img">
+                    <h2 class="catalog-game-title medium">Red Dead Redemption 2</h2>
+                    <div class="buy-box">
+                        <h3 class="medium">20$</h3>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="discount-v medium">-10%</h3>
+                </div>
+            </div>
+            <div class="catalog-item filter-discount shadow" data-aos="fade-up">
+                <div class="box-wrapper">
+                    <img src="img/Catalog/gta5.jpg" alt="catalog-img">
+                    <h2 class="catalog-game-title medium">Grand Theft Auto V</h2>
+                    <div class="buy-box">
+                        <h3 class="medium">15$</h3>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="discount-v medium">-10%</h3>
+                </div>
+            </div>
+            <div class="catalog-item filter-discount shadow" data-aos="fade-up">
+                <div class="box-wrapper">
+                    <img src="img/Catalog/residentevil7.jpg" alt="catalog-img">
+                    <h2 class="catalog-game-title medium">Resident Evil 7</h2>
+                    <div class="buy-box">
+                        <h3 class="medium">15$</h3>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="discount-v medium">-10%</h3>
+                </div>
+            </div>
+            <div class="catalog-item filter-discount shadow" data-aos="fade-up">
+                <div class="box-wrapper">
+                    <img src="img/Catalog/wwz.jpg" alt="catalog-img">
+                    <h2 class="catalog-game-title medium">World War Z</h2>
+                    <div class="buy-box">
+                        <h3 class="medium">10$</h3>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="discount-v medium">-10%</h3>
+                </div>
+            </div> 
+            <!-- უფასო -->
+            <div class="catalog-item filter-free shadow" data-aos="fade-up">
+                <div class="box-wrapper">
+                    <img src="img/Catalog/CSGO.jpg" alt="catalog-img">
+                    <h2 class="catalog-game-title medium">Counter Strike Global Offensive</h2>
+                    <div class="buy-box">
+                        <h3 class="regular">For free</h3>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog-item filter-free shadow" data-aos="fade-up">
+                <div class="box-wrapper">
+                    <img src="img/Catalog/warzone.jpg" alt="catalog-img">
+                    <h2 class="catalog-game-title medium"> Call of Duty Warzone</h2>
+                    <div class="buy-box">
+                        <h3 class="regular">For free</h3>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+ 
+    <section id="recomended" data-aos="fade-up"> 
+        <h1 class="section-title geo">რეკომენდირებულია</h1>
+
+        <div class="recom-wraper container">
+            <div class="rec-box shadow" data-aos="fade-up">
+                <img class="image" src="img/recomended/cyberpunk.jpg" alt="rec-images">
+                <div class="description">
+                    <h3 class="r-title bold">Wasteland 3</h3>
+                    <div class="r-count">
+                        <ul class="r-left">
+                            <i class="fab fa-windows"></i>
+                            <h3 class="r-type regular">for windows</h3>
+                        </ul>
+                        <ul class="r-right">
+                            <h3 class="r-cost regular">60.0$</h3>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="rec-box shadow" data-aos="fade-up">
+                <img class="image" src="img/recomended/Wasteland3.jpg" alt="rec-images">
+                <div class="description">
+                    <h3 class="r-title bold">Cyberpunk 2077</h3>
+                    <div class="r-count">
+                        <ul class="r-left">
+                            <i class="fab fa-windows"></i>
+                            <h3 class="r-type regular">for windows</h3>
+                        </ul>
+                        <ul class="r-right">
+                            <h3 class="r-cost regular">30.0$</h3>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="rec-box shadow" data-aos="fade-up">
+                <img class="image" src="img/recomended/the-witcher-3.jpg" alt="rec-images">
+                <div class="description">
+                    <h3 class="r-title bold">The Witcher 3</h3>
+                    <div class="r-count">
+                        <ul class="r-left">
+                            <i class="fab fa-windows"></i>
+                            <h3 class="r-type regular">for windows</h3>
+                        </ul>
+                        <ul class="r-right">
+                            <h3 class="r-cost regular">20.0$</h3>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="rec-box shadow" data-aos="fade-up">
+                <img class="image" src="img/recomended/Dishonored-1.png" alt="rec-images">
+                <div class="description">
+                    <h3 class="r-title bold">Dishonored 1</h3>
+                    <div class="r-count">
+                        <ul class="r-left">
+                            <i class="fab fa-windows"></i>
+                            <h3 class="r-type regular">for windows</h3>
+                        </ul>
+                        <ul class="r-right">
+                            <h3 class="r-cost regular">20.0$</h3>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec-call-to-action" data-aos="fade-up">
+        <div class="call-to-action container"></div>
+    </section>
+
+    <section id="weekly-news" data-aos="fade-up">
+        <h1 class="section-title geo">კვირის საუკეთესო თამაშები</h1>
+        <div class="weekly-news-wraper container">
+            <div class="w-box shadow" data-aos="fade-up">
+                <img class="w-box-cover" src="img/weekly-news/the-witcher-3-collectibles.jpg" alt="w-box-image">
+                <div class="w-description">
+                    <div class="w-left-cont">
+                        <h3 class="w-game-title medium"> The Witcher 3: Wild Hunt </h3>
+                        <h3 class="w-game-count regular">$21</h3>
+                    </div>
+                    <div class="w-right-cont">
+                        <img src="img/weekly-news/kalati.png" alt="kalati">
+                    </div>
+                </div>
+            </div>
+            <div class="w-box shadow" data-aos="fade-up">
+                <img class="w-box-cover" src="img/weekly-news/dishonored.jpg" alt="w-box-image">
+                <div class="w-description">
+                    <div class="w-left-cont">
+                        <h3 class="w-game-title medium"> Dishonored 2 </h3>
+                        <h3 class="w-game-count regular">$21</h3>
+                    </div>
+                    <div class="w-right-cont">
+                        <img src="img/weekly-news/kalati.png" alt="kalati">
+                    </div>
+                </div>
+            </div>
+            <div class="w-box shadow" data-aos="fade-up">
+                <img class="w-box-cover" src="img/weekly-news/league-of-legends.jpg" alt="w-box-image">
+                <div class="w-description">
+                    <div class="w-left-cont">
+                        <h3 class="w-game-title medium"> League Of Legends </h3>
+                        <h3 class="w-game-count regular">$5</h3>
+                    </div>
+                    <div class="w-right-cont">
+                        <img src="img/weekly-news/kalati.png" alt="kalati">
+                    </div>
+                </div>
+            </div>
+            <div class="w-box shadow" data-aos="fade-up">
+                <img class="w-box-cover" src="img/weekly-news/Metro-Exodus.jpg" alt="w-box-image">
+                <div class="w-description">
+                    <div class="w-left-cont">
+                        <h3 class="w-game-title medium"> Metro Exodus </h3>
+                        <h3 class="w-game-count regular">$5</h3>
+                    </div>
+                    <div class="w-right-cont">
+                        <img src="img/weekly-news/kalati.png" alt="kalati">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+    <section id="contact" data-aos="fade-up">
+        <h1 class="section-title geo">კონტაქტი</h1>
+        <div class="contact-wraper container shadow">
+            <div class="left-con-cont">
+                <img src="img/spam.svg" alt="contact-img">
+            </div>
+            <div class="right-con-cont">
+                <form>
+                    <div class="form-wrapper">
+                        <label for="sname"></label>
+                        <input type="text" id="sname" name="subject" placeholder="შეიყვანე სახელი">
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="username"></label>
+                        <input type="text" id="username" name="username" placeholder="შეიყვანე გვარი">
+                    </div>
+                    <div class="form-wrapper">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-wrapper">
+                        <textarea name="textarea" id="textarea" placeholder="შეიყვანე კითხვა..."></textarea>
+                    </div>
+                    <div class="form-btn">
+                        <button type="submit" value="Submit">შეტყობინების გაგზავნა <i class="far fa-paper-plane"></i> </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wraper">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-discord"></i></a>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>AOS.init({ duration: 600,});</script>
+</body>
+</html>
