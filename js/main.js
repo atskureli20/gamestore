@@ -23,78 +23,20 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
         centerPadding: '120px',
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 5,
         responsive: [
-        {
-            breakpoint: 1336,
-            settings: {
-                centerPadding: '70px',
-                slidesToShow: 3
-            }
-        },
-        {
-            breakpoint: 1024,
-            settings: {
-                centerPadding: '0px',
-                slidesToShow: 3
-            }
-        },
-        {
-            breakpoint: 930,
-            settings: {
-                centerPadding: '70px',
-                slidesToShow: 2
-            }
-        },
-        {
-            breakpoint: 786,
-            settings: {
-                centerPadding: '10px',
-                slidesToShow: 2
-            }
-        },
-        {
-            breakpoint: 690,
-            settings: {
-                centerPadding: '0px',
-                slidesToShow: 2
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                centerPadding: '100px',
-                slidesToShow: 1
-            }
-        },
-        {
-            breakpoint: 490,
-            settings: {
-                centerPadding: '50px',
-                slidesToShow: 1
-            }
-        },
-        {
-            breakpoint: 440,
-            settings: {
-                centerPadding: '0px',
-                slidesToShow: 1
-            }
-        },
-        {
-            breakpoint: 360,
-            settings: {
-                centerPadding: '0',
-                slidesToShow: 1
-            }
-        },
-        {
-            breakpoint: 320,
-            settings: {
-                centerPadding: '100',
-                slidesToShow: 1
-            }
-        }
+        {  breakpoint: 1366, settings: { centerPadding: '80px', slidesToShow: 2 } },
+        {  breakpoint: 789, settings: { centerPadding: '175px', slidesToShow: 1 } },
+        {  breakpoint: 750, settings: { centerPadding: '150px', slidesToShow: 1}  },
+        {  breakpoint: 700, settings: { centerPadding: '130px', slidesToShow: 1}  },
+        {  breakpoint: 650, settings: { centerPadding: '90px', slidesToShow: 1}  },
+        {  breakpoint: 600, settings: { centerPadding: '80px', slidesToShow: 1}  },
+        {  breakpoint: 550, settings: { centerPadding: '60px', slidesToShow: 1}  },
+        {  breakpoint: 500, settings: { centerPadding: '20px', slidesToShow: 1}  },
+        {  breakpoint: 450, settings: { centerPadding: '2px', slidesToShow: 1}  },
+        {  breakpoint: 400, settings: { centerPadding: '10px', slidesToShow: 1}  },
+        {  breakpoint: 320, settings: { centerPadding: '3px', slidesToShow: 1}  },
+
         ]
     });
 });
