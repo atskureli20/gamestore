@@ -12,7 +12,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" href="" type="image/gif" sizes="16x16">
+    <!-- Facebook -->
+    <meta property="og:url"                content="https://atskureli20.github.io/safinalo/" />
+    <meta property="og:type"               content="Store" />
+    <meta property="og:title"              content="Online Game Store" />
+    <meta property="og:description"        content="თამაშების ონლაინ მაღაზია" />
+    <meta property="og:image"              content="https://wallpaperaccess.com/full/909679.jpg" />
+    <!-- <link rel="icon" href="" type="image/gif" sizes="16x16"> -->
 </head>
 <body>
 
@@ -21,9 +27,9 @@
 
         <nav class="nav-bar">
             <div class="nav-content container"> 
-                <ul class="logo">
+                <div class="logo">
                     <img class="nav-img" src="img/logo.png" alt="logo">
-                </ul>
+                </div>
                 <ul class="navigation">
                     <li class="nav-list">
                         <a class="nav-link geo" href="index.html">მთავარი</a>
@@ -38,9 +44,9 @@
                         <a class="nav-link geo" href="#contact">კონტაქტი</a>
                     </li>
                 </ul>
-                <ul class="search shadow">
-                    <input class="inp-search" placeholder="ძიება..." type="search" name="search" id="">
-                </ul>
+                <div class="search shadow">
+                    <input class="inp-search" placeholder="ძიება..." type="search" name="search" id="input">
+                </div>
                 <ul class="profile shadow">
                     <li> 
                         <a href="profile.html">
@@ -56,17 +62,17 @@
                             <a href="#">
                                 <i class="fas fa-shopping-cart"></i>
                                 <div class="ordered-wraper">
-                                    <h1 class="ordered medium"> 2 </h1>
+                                    <h2 class="ordered medium"> 2 </h2>
                                 </div>
                             </a>
                         </div>
                     </li>
                 </ul>
-                <ul class="burger">
+                <div class="burger">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
-                </ul>
+                </div>
             </div>
         </nav>
             
@@ -98,7 +104,7 @@
 
 
     <section id="catalog" data-aos="fade-up">
-        <h1 class="section-title geo">კატალოგი</h1>
+        <h2 class="section-title geo">კატალოგი</h2>
         <div class="catalog-wrapper container">
             <div class="catalog-btns">
               <ul id="catalog-flters">
@@ -176,12 +182,11 @@
                     </div>
                 </div>
             </div>
-          </div>
         </div>
     </section>
  
     <section id="recomended" data-aos="fade-up"> 
-        <h1 class="section-title geo">რეკომენდირებულია</h1>
+        <h2 class="section-title geo">რეკომენდირებულია</h2>
 
         <div class="recom-wraper container">
             <div class="rec-box shadow" data-aos="fade-up">
@@ -189,13 +194,13 @@
                 <div class="description">
                     <h3 class="r-title bold">Wasteland 3</h3>
                     <div class="r-count">
-                        <ul class="r-left">
+                        <div class="r-left">
                             <i class="fab fa-windows"></i>
                             <h3 class="r-type regular">for windows</h3>
-                        </ul>
-                        <ul class="r-right">
+                        </div>
+                        <div class="r-right">
                             <h3 class="r-cost regular">60.0$</h3>
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -204,13 +209,13 @@
                 <div class="description">
                     <h3 class="r-title bold">Cyberpunk 2077</h3>
                     <div class="r-count">
-                        <ul class="r-left">
+                        <div class="r-left">
                             <i class="fab fa-windows"></i>
                             <h3 class="r-type regular">for windows</h3>
-                        </ul>
-                        <ul class="r-right">
+                        </div>
+                        <div class="r-right">
                             <h3 class="r-cost regular">30.0$</h3>
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -219,13 +224,13 @@
                 <div class="description">
                     <h3 class="r-title bold">The Witcher 3</h3>
                     <div class="r-count">
-                        <ul class="r-left">
+                        <div class="r-left">
                             <i class="fab fa-windows"></i>
                             <h3 class="r-type regular">for windows</h3>
-                        </ul>
-                        <ul class="r-right">
+                        </div>
+                        <div class="r-right">
                             <h3 class="r-cost regular">20.0$</h3>
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -234,24 +239,25 @@
                 <div class="description">
                     <h3 class="r-title bold">Dishonored 1</h3>
                     <div class="r-count">
-                        <ul class="r-left">
+                        <div class="r-left">
                             <i class="fab fa-windows"></i>
                             <h3 class="r-type regular">for windows</h3>
-                        </ul>
-                        <ul class="r-right">
+                        </div>
+                        <div class="r-right">
                             <h3 class="r-cost regular">20.0$</h3>
-                        </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="sec-call-to-action" data-aos="fade-up">
+    
+    <div id="sec-call-to-action" data-aos="fade-up">
         <div class="call-to-action container"></div>
-    </section>
+    </div>
 
     <section id="weekly-news" data-aos="fade-up">
-        <h1 class="section-title geo">კვირის საუკეთესო თამაშები</h1>
+        <h2 class="section-title geo">კვირის საუკეთესო თამაშები</h2>
         <div class="weekly-news-wraper container">
             <div class="w-box shadow" data-aos="fade-up">
                 <img class="w-box-cover" src="img/weekly-news/the-witcher-3-collectibles.jpg" alt="w-box-image">
@@ -302,11 +308,10 @@
                 </div>
             </div>
         </div>
-    </div>
     </section>
     
     <section id="contact" data-aos="fade-up">
-        <h1 class="section-title geo">კონტაქტი</h1>
+        <h2 class="section-title geo">კონტაქტი</h2>
         <div class="contact-wraper container shadow">
             <div class="left-con-cont">
                 <img src="img/spam.svg" alt="contact-img">
@@ -344,10 +349,10 @@
         </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
     <script>AOS.init({ duration: 600,});</script>
 </body>
 </html>
