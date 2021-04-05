@@ -1,8 +1,4 @@
 
-
-
-
-
 $(document).ready(function(){
     $('.carousel').slick({
         centerMode: true,
@@ -14,6 +10,8 @@ $(document).ready(function(){
         slidesToShow: 1,
         fade: true,
         arrows: true,
+        prevArrow: '<span class="priv-arrow"><i class="fas fa-chevron-left"></i></span>',
+        nextArrow: '<span class="next-arrow"><i class="fas fa-chevron-right"></i></span>',
         cssEase: 'linear'
     });
     $('.recom-wraper').slick({
@@ -23,7 +21,6 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
         centerPadding: '120px',
         slidesToShow: 3,
-        slidesToScroll: 5,
         responsive: [
         {  breakpoint: 1366, settings: { centerPadding: '80px', slidesToShow: 2 } },
         {  breakpoint: 789, settings: { centerPadding: '175px', slidesToShow: 1 } },
@@ -36,7 +33,6 @@ $(document).ready(function(){
         {  breakpoint: 450, settings: { centerPadding: '2px', slidesToShow: 1}  },
         {  breakpoint: 400, settings: { centerPadding: '10px', slidesToShow: 1}  },
         {  breakpoint: 320, settings: { centerPadding: '3px', slidesToShow: 1}  },
-
         ]
     });
 });
