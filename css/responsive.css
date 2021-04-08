@@ -196,6 +196,8 @@
   .catalog-item{
     margin-left: 0;
   }
+
+  .game-info-image{ height: auto;}
 }
 @media (max-width: 550px){
   .priv-arrow {
